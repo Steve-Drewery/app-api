@@ -22,5 +22,5 @@ test:
 
 production:
   <<: *default
-  database: workout_api_production
   url: <%= ENV["DATABASE_URL"] %>
+  database: workout_api_production
