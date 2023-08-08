@@ -28,7 +28,7 @@ Content-Type: application/json
     "set_number": {
         "reps": 10,
         "weight": 100,
-        "exercise_id": 12
+        "exercise_id": 1
     }
     
 }
