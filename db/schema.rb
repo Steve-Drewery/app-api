@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2023_08_07_134039) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "exercises", force: :cascade do |t|
     t.string "title"
     t.datetime "created_at", precision: 6, null: false
@@ -23,7 +26,7 @@ ActiveRecord::Schema.define(version: 2023_08_07_134039) do
     t.integer "weight"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "exercise_id"
+    t.bigint "exercise_id"
     t.index ["exercise_id"], name: "index_set_numbers_on_exercise_id"
   end
 
