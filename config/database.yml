@@ -22,7 +22,5 @@ test:
 
 production:
   <<: *default
-  url: <%= ENV["postgresql://postgres:RLBa7IztvdHA7PUJKJRz@containers-us-west-167.railway.app:5838/railway"] %>
-  username: postgres
-  database: railway
-  port: 5838
+  url: <%= ENV["DATABASE_URL"] %>
+  database: workout_api_production
