@@ -41,6 +41,13 @@ class SetNumbersController < ApplicationController
         head :no_content
     end
 
+    def delete_exercise
+        Exercise.find(params[:id]).destroy!
+
+        head :no_content
+    end
+    
+
     private
 
     def exercise_params

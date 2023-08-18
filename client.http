@@ -20,6 +20,10 @@ Content-Type: application/json
     
 }
 
+### delete exercise
+# DELETE http://localhost:3000/set_numbers/2
+# Content-Type: application/json
+
 ### update set
 PATCH http://localhost:3000/set_numbers/1
 Content-Type: application/json
@@ -35,6 +39,10 @@ Content-Type: application/json
 
 ### delete set
 DELETE http://localhost:3000/set_numbers/2
+Content-Type: application/json
+
+### delete exercise
+DELETE http://localhost:3000/set_numbers/exercise/2
 Content-Type: application/json
 
 ### create user

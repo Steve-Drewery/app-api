@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :set_numbers, only: [:index, :create, :destroy, :update, :show]
 
   post 'authenticate', to: 'authentication#create'
+  delete '/set_numbers/exercise/:id', to: 'set_numbers#delete_exercise'
   scope '/auth' do
     resources :users, param: :username
     post '/login', to: 'authentication#login'
